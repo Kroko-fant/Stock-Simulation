@@ -7,7 +7,7 @@ class Stock:
     def __init__(self, name, price, stype):
         self.name = name
         self.price = price
-        while -1 > stype or 1 > stype:
+        while -1 > stype or 1 < stype:
             stype = stype / 10
         self._stype = stype
 
@@ -25,3 +25,5 @@ class Stock:
 
     def __str__(self) -> str:
         return f'{self.name}: {self.price}'
+
+
