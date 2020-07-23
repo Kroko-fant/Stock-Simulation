@@ -1,6 +1,10 @@
 import random as r
 
 
+def rand_szenario():
+    return Szenario(r.randint(-3, 4))
+
+
 class Szenario:
 
     def __init__(self, name):
